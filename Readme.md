@@ -4,8 +4,6 @@
 
 This project is a Streamlit-based chat application that interacts with the Gemini AI model, allowing users to engage in conversations with an artificial intelligence assistant. The application stores chat history, allowing users to revisit and continue previous conversations.
 
-<div align="center"><img src="docs/gemini-chatbot.gif" width="800"></div>
-
 ## Getting Started
 
 ### Dependencies
@@ -23,9 +21,8 @@ Follow these steps to set up and run the project:
 
 1. Create a virtual environment:
 ```
-python3 -m venv my_env
-source my_env/bin/activate 
-.\my_env\Scripts\activate 
+python3 -m venv venv
+source ./venv/bin/activate
 ```
 
 2. Install dependencies:
@@ -35,7 +32,7 @@ pip install -r requirements.txt
 
 3. Run the Streamlit server:
 ```
-streamlit run app_chat.py
+streamlit run app.py
 ```
 
 4. Access the application in your browser at http://localhost:8501.
@@ -45,7 +42,7 @@ streamlit run app_chat.py
 ## Repository Structure
 ```
 repository/
-├── app_chat.py               # the code and UI integrated together live here
+├── app.py               # the code and UI integrated together live here
 ├── requirements.txt     # the python packages needed to run locally
 ├── .streamlit/
 │   └── config.toml      # theme info for the UI
